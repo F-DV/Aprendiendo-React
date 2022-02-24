@@ -10,6 +10,7 @@ import {
 import Contacto from './components/Contacto';
 import Inicio from './components/Inicio'; 
 import Nosotros from './components/Nosotros';
+import User from './components/User';
 
 function App() {
 
@@ -30,20 +31,24 @@ function App() {
           Contacto
           </NavLink>
           </div> 
+
         <h1>Navbar...</h1>
         <hr/>
         <Switch>
-          <Route path = "/" exact>
-            <Inicio/>
+          <Route path = "/nosotros/:id" >
+            <User/>
           </Route>
+          
           <Route path = "/contacto">
             <Contacto />
           </Route>
           <Route path = "/nosotros">
           <Nosotros />
           </Route>
-        </Switch>
-       
+          <Route path = "/" exact>
+            <Inicio/>
+          </Route>
+        </Switch>    
       </div>
     </Router>
 
