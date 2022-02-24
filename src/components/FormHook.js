@@ -12,7 +12,7 @@ import { useForm } from 'react-hook-form'
 
 const FormHook = () => {
 
-    const {register, errors, handleSubmit} = useForm();
+const {register, errors, handleSubmit} = useForm();
 
     //cada vez que presionemos el boton leemos todos los inputs
     const onSubmit =(data,e) => {
@@ -30,7 +30,8 @@ const FormHook = () => {
                     
                     {...register("titulo", { required: true })}
                 />
-           {/* {errors.exampleRequired && <span>This field is required</span>}   Este campo no quiere funcionar, Consultarlo*/  }
+
+            {/*{errors.exampleRequired && <span>This field is required</span>}*/}   
                 <button className='btn btn-primary'>Enviar</button>
             </form>
         </Fragment>

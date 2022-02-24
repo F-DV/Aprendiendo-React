@@ -4,12 +4,14 @@ import React from 'react';
 //import Lista from './components/Lista';
 //import Formulario from './components/Formulario';
 import FormHook from './components/FormHook';
+import EjemploUno from './components/EjemploUno';
 
 function App() {
   return (
     //ClassName para ingresar elementos Boostrap css, mt-5 : magin top, 
     <div className="container mt-5">         
-      <FormHook/>                           
+      {/*<FormHook/>*/}
+      <EjemploUno/>                           
     </div>
   );
 }
